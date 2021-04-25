@@ -12,3 +12,4 @@ zerk ping | set ping
 
 
 ## Credits to Kygas 
+https://github.com/KYGAS
