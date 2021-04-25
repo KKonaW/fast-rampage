@@ -1,0 +1,15 @@
+{
+    "disableAutoUpdate": true,
+    "name": "fast-rampage-master",
+	"author": "Kygas",
+    "credit": "github.com/KYGAS",
+    "description": "rework from ValkRuneburst for Zerk",
+    "options": {
+        "niceName": "fast-rampage-master",
+        "guiName": "fast-rampage-master",
+		"settingsVersion": 1,
+		"settingsFile": "config.json"
+    },
+    "version": "1.0",
+    "servers": ["network"]
+}
