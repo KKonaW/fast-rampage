@@ -9,3 +9,6 @@ safe rampage macro, nothing crazy.
 --- | ---
 zerk | Turn module on/off
 zerk ping | set ping
+
+
+## Credits to Kygas 
