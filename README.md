@@ -1,5 +1,5 @@
 # fast-rampage
-safe rampage macro, nothing crazy.
+safe rampage macro, nothing crazy..
 
 
 ## Compatible with SP and NGSP 
