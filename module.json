@@ -1,15 +1,15 @@
 {
     "disableAutoUpdate": true,
-    "name": "fast-rampage-master",
-	"author": "Kygas",
-    "credit": "github.com/KYGAS",
-    "description": "rework from ValkRuneburst for Zerk",
+    "name": "fast-rampage",
+	"author": "<font color='#FDD017'>Bernie 2020</font>",
+    "credit": "KYGAS for his ValkFastRuneburst",
+    "description": "Rampages are faster",
     "options": {
-        "niceName": "fast-rampage-master",
-        "guiName": "fast-rampage-master",
+        "niceName": "fast-rampage",
+        "guiName": "<font color='#FDD017'>fast-rampage</font>",
 		"settingsVersion": 1,
 		"settingsFile": "config.json"
     },
-    "version": "1.0",
-    "servers": ["network"]
+    "version": "<font color='#FC0FC0'>GF-107.2</font>",
+    "servers": ["https://raw.githubusercontent.com/KKonaW/fast-rampage/master/"]
 }

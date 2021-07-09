@@ -1,10 +1,10 @@
 {
     "version": 1,
     "data": {
-        "enabled": false,
+        "enabled": true,
         "mode": "hits",
         "setRunes": 1,
         "delay": 0,
-        "myAveragePing": 10
+        "myAveragePing": 0
     }
 }

@@ -2,7 +2,7 @@ const JOB_ZERK = 3;
 let rbIds = [380100,330100,360100,360130,360131]
 let hitIds = [380100,330100,360100,360130,360131]
 
-module.exports = function zerk(mod) {
+module.exports = function ValkFastRB(mod) {
 	const { command } = mod.require
 	let gameId = 0n,
 		model = 0,
@@ -15,18 +15,18 @@ module.exports = function zerk(mod) {
 	command.add('zerk', (arg,value) =>{
 		if(!arg){
 			mod.settings.enabled = !mod.settings.enabled;
-			command.message("zerk module is now :" + (mod.settings.enabled?"Enabled":"Disabled"));
+			command.message("fast-rampage module is now :" + (mod.settings.enabled?"Enabled":"Disabled"));
 			mod.saveSettings();
 			return;
 		}
 		switch(arg){
 			case 'on':
 				mod.settings.enabled = true;
-				command.message("zerk module is now :" + (mod.settings.enabled?"Enabled":"Disabled"));
+				command.message("fast-rampage module is now" + (mod.settings.enabled?"Enabled":"Disabled"));
 				break;
 			case 'off':
 				mod.settings.enabled = false;
-				command.message("zerk module is now :" + (mod.settings.enabled?"Enabled":"Disabled"));
+				command.message("fast-rampage module is now" + (mod.settings.enabled?"Enabled":"Disabled"));
 				break;
 			case 'ping':
 				if( !value || isNaN(value) ){
@@ -34,7 +34,7 @@ module.exports = function zerk(mod) {
 				}
 				else{
 					mod.settings.myAveragePing = Number(value);
-					command.message("Average ping set to : " + value);
+					command.message("Average ping set to" + value);
 				}
 				break;
 			default:
@@ -55,7 +55,7 @@ module.exports = function zerk(mod) {
 		runes = event.runemarksAdded;
 	})
 	
-	mod.hook('S_PLAYER_STAT_UPDATE', ( (mod.clientInterface==undefined) ? 13 : 14 ), (event) => {
+	mod.hook('S_PLAYER_STAT_UPDATE', ( (mod.clientInterface==undefined) ? 15 : 16 ), (event) => {
 		aspd = (event.attackSpeed + event.attackSpeedBonus) / event.attackSpeed;
 	});
 	
@@ -97,7 +97,7 @@ module.exports = function zerk(mod) {
 				castedRunes = runes;
 				hitRunes = 0;
 				blocker.push(mod.hook('C_START_SKILL', 7, {order: -Infinity}, (event)=>{
-					if(![360100,360130,360131].includes(event.skill.id)) return false;
+					if(![140100,140101,140199].includes(event.skill.id)) return false;
 				}))
 				canceler.push(mod.hook('S_EACH_SKILL_RESULT', 14, (e)=>{
 					if( !( hitIds.includes(e.skill.id) ) ) return;
@@ -136,7 +136,7 @@ module.exports = function zerk(mod) {
 					blocker = [];
 					for(let unblock in unblocker) mod.clearTimeout(unblocker[unblock])
 					unblocker = [];
-				}, 1000 +  mod.settings.myAveragePing))
+				}, 1300 +  mod.settings.myAveragePing))
 				break;
 			case 'delay':
 				if(rbIds.includes(event.skill.id)){
