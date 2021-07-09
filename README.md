@@ -1,5 +1,5 @@
 # fast-rampage
-rampage
+faster rampages nothing crazy
 
 ## Compatible with SP and NGSP 
 
