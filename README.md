@@ -7,7 +7,7 @@ faster rampages nothing crazy
 /8 channel  | effect description
 --- | ---
 zerk | Turn module on/off
-zerk ping | set ping
+
 
 
 ## Credits to Kygas 
