@@ -2,7 +2,7 @@ const JOB_ZERK = 3;
 let rbIds = [360100,360130,360131]
 let hitIds = [360100,360130,360131]
 
-module.exports = function ValkFastRB(mod) {
+module.exports = function ZerkFastRB(mod) {
 	const command = mod.require.command || mod.command;
 	let gameId = 0n,
 		model = 0,
